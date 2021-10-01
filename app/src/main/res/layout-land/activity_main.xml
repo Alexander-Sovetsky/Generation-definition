@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#100606"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-48dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="319dp"
+            android:layout_height="237dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/people"
+            android:foreground="@drawable/_9eb1487ccb6c7e3cdca3cebf4334eb3"
+            android:visibility="visible"
+            tools:src="@drawable/_09eb1487ccb6c7e3cdca3cebf4334eb3"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            tools:targetApi="m" />
+
+        <LinearLayout
+            android:id="@+id/layer"
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="364dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/welcome"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:translationY="10dp"
+                android:visibility="visible" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/personalGeneration"
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="0dp"
+                android:background="@color/cardview_dark_background"
+                android:drawableBottom="@color/teal_700"
+                android:gravity="center"
+                android:hint="Enter the year of your birth"
+                android:inputType="text"
+                android:textColor="#838080"
+                android:textColorHighlight="#F3EEEE"
+                android:textColorHint="#979393"
+                android:textColorLink="#F4F0F0"
+                android:textCursorDrawable="@android:drawable/editbox_dropdown_dark_frame"
+                android:translationY="20dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="131dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="generationDefinition"
+                android:text="@string/enter"
+                android:translationY="30dp"
+                android:visibility="visible"
+                app:iconTint="#EAE3E3" />
+
+            <TextView
+                android:id="@+id/conclusion"
+                android:layout_width="364dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:translationY="40dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
