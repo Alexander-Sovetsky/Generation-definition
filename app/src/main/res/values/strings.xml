@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Generation definition</string>
+    <string name="enter">Enter</string>
+    <string name="people">People</string>
+    <string name="yourAge">Enter the year of your birth</string>
+    <string name="welcome">Let\'s get to know your generation!</string>
+    <string name="result">Result</string>
+
+</resources>
